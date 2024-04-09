@@ -413,9 +413,9 @@ p {
   color: #f4f4fd;
   max-width: 264px;
 }
-.footer-title {
+.footer-container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 .content-media {
   display: flex;
@@ -427,7 +427,6 @@ p {
   letter-spacing: 0.02em;
   color: white;
   margin-bottom: 16px;
-  display: flex;
 }
 .footer-ul {
   display: flex;
