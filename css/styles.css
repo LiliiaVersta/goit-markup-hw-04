@@ -130,9 +130,10 @@ p {
 
 /* main */
 .main-section {
-  max-width: 1440px;
+  width: 1440px;
 }
 .section-main {
+  max-width: 1440px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -174,7 +175,7 @@ p {
   border: none;
   border-radius: 4px;
   box-shadow: 0 2px 4px #2e2f42;
-  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main-button:hover,
 .main-button:focus {
@@ -401,6 +402,9 @@ p {
   background: #2e2f42;
   padding: 100px 0;
 }
+.container-logo {
+  margin-right: 120px;
+}
 .footer-content {
   font-weight: 400;
   font-size: 16px;
@@ -410,12 +414,11 @@ p {
   max-width: 264px;
 }
 .footer-title {
-  display: block;
+  display: flex;
+  align-items: center;
 }
 .content-media {
   display: flex;
-  align-items: center;
-  margin-right: 120px;
 }
 .footer-media {
   font-weight: 500;
@@ -424,13 +427,11 @@ p {
   letter-spacing: 0.02em;
   color: white;
   margin-bottom: 16px;
+  display: flex;
 }
 .footer-ul {
   display: flex;
-  flex-direction: row;
-  position: relative;
   gap: 16px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-items {
   width: 40px;
